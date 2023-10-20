@@ -156,17 +156,21 @@
   top: .5rem;
   padding: .2rem .4rem;
 }
+
 .layout-navbar .navbar-dropdown .dropdown-menu {
   min-width: 22rem;
   overflow: hidden;
 }
+
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-list {
   max-height: 30rem;
 }
+
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item {
   text-align: center;
   padding: 1.5rem;
 }
+
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item .dropdown-shortcuts-icon {
   height: 3.125rem;
   width: 3.125rem;
@@ -176,9 +180,20 @@
   align-items: center;
   justify-content: center;
 }
-.layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item a, .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item a:hover {
+
+.layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item a,
+.layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item a:hover {
   display: block;
   margin-bottom: 0;
   color: #697a8d !important;
   font-weight: 500;
+}
+
+.bg-menu-theme .menu-inner>.menu-item.active>.menu-link {
+  color: #566a7f;
+  background-color: rgba(105, 108, 255, 0.16) !important;
+}
+
+.bg-menu-theme .menu-inner>.menu-item.active:before {
+  background: #566a7f;
 }

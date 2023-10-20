@@ -16,30 +16,72 @@ export default function AdminMenu() {
                     <li className="menu-item active open">
                         <a href="" className="menu-link">
                             <i className="menu-icon tf-icons bx bx-home-circle"></i>
-                            <div data-i18n="Dashboards">Dashboards</div>
+                            <div data-i18n="Dashboards">Home</div>
                         </a>
                     </li>
                     <li className="menu-header small text-uppercase"><span className="menu-header-text">Applications</span></li>
                     <li className="menu-item">
-                        <a href="cards-basic.html" className="menu-link">
-                            <i className="menu-icon tf-icons bx bx-collection"></i>
-                            <div data-i18n="Basic">Cards</div>
+                        <a href="" className="menu-link">
+                            <i className="menu-icon tf-icons bx bx-shopping-bag"></i>
+                            <div data-i18n="Order">Order</div>
                         </a>
                     </li>
                     <li className="menu-item">
                         <a href="" className="menu-link menu-toggle">
-                            <i className="menu-icon tf-icons bx bx-box"></i>
-                            <div data-i18n="User interface">User interface</div>
+                            <i className="menu-icon tf-icons bx bxl-product-hunt"></i>
+                            <div data-i18n="Product">Product</div>
                         </a>
                         <ul className="menu-sub">
                             <li className="menu-item">
-                                <a href="ui-accordion.html" className="menu-link">
-                                    <div data-i18n="Accordion">Accordion</div>
+                                <a href="" className="menu-link">
+                                    <div data-i18n="Collections">Collections</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="" className="menu-link">
+                                    <div data-i18n="Collections">Tags</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="" className="menu-link">
+                                    <div data-i18n="Comments">Comments</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="" className="menu-link">
+                                    <div data-i18n="All Product">All Product</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li className="menu-header small text-uppercase"><span className="menu-header-text">Settings</span></li>
+                    <li className="menu-item">
+                        <a href="" className="menu-link">
+                            <i className="menu-icon tf-icons bx bx-user"></i>
+                            <div data-i18n="Customer">Customer</div>
+                        </a>
+                    </li>
+                    <li className="menu-item">
+                        <a href="" className="menu-link">
+                            <i className="menu-icon tf-icons bx bx-photo-album"></i>
+                            <div data-i18n="File & media">File & media</div>
+                        </a>
+                    </li>
+                    <li className="menu-item">
+                        <a href="" className="menu-link">
+                            <i className="menu-icon tf-icons bx bx-news"></i>
+                            <div data-i18n="News">News</div>
+                        </a>
+                    </li>
+                    <li className="menu-header small text-uppercase"><span className="menu-header-text">General</span></li>
+                    <li className="menu-item">
+                        <a
+                            href=""
+                            target="_blank"
+                            className="menu-link">
+                            <i className="menu-icon tf-icons bx bx-cog"></i>
+                            <div data-i18n="Setting">Setting</div>
+                        </a>
+                    </li>
                     <li className="menu-item">
                         <a
                             href=""
@@ -47,15 +89,6 @@ export default function AdminMenu() {
                             className="menu-link">
                             <i className="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Support</div>
-                        </a>
-                    </li>
-                    <li className="menu-item">
-                        <a
-                            href=""
-                            target="_blank"
-                            className="menu-link">
-                            <i className="menu-icon tf-icons bx bx-file"></i>
-                            <div data-i18n="Documentation">Documentation</div>
                         </a>
                     </li>
                 </ul>
