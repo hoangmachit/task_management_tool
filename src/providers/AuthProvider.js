@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
                 const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
                 const userData = await response.json();
                 setUser(userData);
-                setIsLogin(true);
+                //setIsLogin(true);
             } catch (error) {
                 setError(error.message || "An error occurred");
             } finally {
