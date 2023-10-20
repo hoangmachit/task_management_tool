@@ -1,5 +1,16 @@
-export default function ClientPage() {
+import products from "@/data/products";
+import ProductItem from "@/components/Client/ProductItem";
+export default async function ClientPage() {
   return (
-    <h1>Welcome to client</h1>
+    <>
+      <div className="center">
+        <ul>
+
+          {products?.map((product) => {
+            return <ProductItem key={product.id} product={product} />
+          })}
+        </ul>
+      </div>
+    </>
   )
 }

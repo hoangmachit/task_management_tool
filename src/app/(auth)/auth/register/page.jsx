@@ -1,5 +1,5 @@
 import Link from "next/link"
-import AuthFormRegister from "@/components/Admin/Auth/FormRegister"
+import AuthFormRegister from "@/components/Auth/FormRegister"
 export const metadata = {
     title: "Register - Management Tool"
 }

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 export async function middleware(request) {
     const { pathname } = request.nextUrl;
-    console.log(`>>>>Pathname: ${pathname}`);
+    console.log(`>>>> Pathname: ${pathname}`);
     return NextResponse.next();
 }
 export const config = {

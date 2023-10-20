@@ -1,4 +1,4 @@
-import AuthFormLogin from "@/components/Admin/Auth/FormLogin"
+import AuthFormLogin from "@/components/Auth/FormLogin"
 import Link from "next/link"
 export const metadata = {
     title: "Login - Management Tool"
