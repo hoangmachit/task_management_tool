@@ -5,6 +5,7 @@ import "@/styles/admin/app.global.css";
 import "@/styles/admin/perfect-scrollbar.global.css";
 import "@/styles/admin/apex-charts.global.css";
 import Script from "next/script";
+import NextTopLoader from 'nextjs-toploader';
 import { AdminProvider } from "@/providers/AdminProvider";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 export const metadata = {
@@ -13,8 +14,9 @@ export const metadata = {
 
 export default function AdminLayout({ children }) {
     return (
-        <html lang="ja" className="layout-navbar-fixed layout-compact layout-menu-fixed">
+        <html lang="vi" className="layout-navbar-fixed layout-compact layout-menu-fixed">
             <body>
+                <NextTopLoader />
                 <AdminProvider>
                     <ThemeProvider>
                         {children}
