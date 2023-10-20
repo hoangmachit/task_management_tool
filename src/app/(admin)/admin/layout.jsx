@@ -5,7 +5,7 @@ import "@/styles/admin/app.global.css";
 import "@/styles/admin/perfect-scrollbar.global.css";
 import "@/styles/admin/apex-charts.global.css";
 import Script from "next/script";
-import { AuthProvider } from "@/providers/AuthProvider";
+import { AdminProvider } from "@/providers/AdminProvider";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 export const metadata = {
     title: 'Admin - Management Tool',
@@ -15,7 +15,7 @@ export default function AdminLayout({ children }) {
     return (
         <html lang="ja" className="layout-navbar-fixed layout-compact layout-menu-fixed">
             <body>
-                <AuthProvider>
+                <AdminProvider>
                     <ThemeProvider>
                         {children}
                         <Script src="/assets/admin/js/helpers.js" strategy="afterInteractive" />
@@ -29,7 +29,7 @@ export default function AdminLayout({ children }) {
                         <Script src="/assets/admin/js/main.js" strategy="afterInteractive" />
                         <Script src="/assets/admin/js/dashboards-analytics.js" strategy="afterInteractive" />
                     </ThemeProvider>
-                </AuthProvider>
+                </AdminProvider>
             </body>
         </html>
     )

@@ -5,7 +5,6 @@ export default async function ClientPage() {
     <>
       <div className="center">
         <ul>
-
           {products?.map((product) => {
             return <ProductItem key={product.id} product={product} />
           })}
