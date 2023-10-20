@@ -10,9 +10,9 @@ export const metadata = {
 export default function Cart() {
     return (
         <>
-            <h2>Welcome to cart items</h2>
+            <h2 style={{ textAlign: "center" }}>Welcome to cart items</h2>
             <ListItemCart />
-            <ButtonCheckout />
+            <div style={{ textAlign: "center" }}><ButtonCheckout /></div>
         </>
     )
 }

@@ -5,6 +5,7 @@ const CartContext = createContext({
     carts: [],
     totalItems: 0,
     addToCart: (product) => { },
+    deleteCartItem: (product) => { },
 });
 
 export const useCart = () => {
@@ -36,12 +37,21 @@ export const CartProvider = ({ children }) => {
         }
     };
 
+    const deleteCartItem = (product) => {
+        const updatedCarts = carts.filter(item => item !== product);
+        setCarts(updatedCarts);
+        if (isLocalStorageAvailable) {
+            localStorage.setItem("carts", JSON.stringify(updatedCarts));
+        }
+    }
+
     return (
         <CartContext.Provider
             value={{
                 carts,
                 addToCart,
                 totalItems,
+                deleteCartItem
             }}
         >
             {children}

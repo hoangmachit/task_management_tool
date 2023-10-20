@@ -57,3 +57,11 @@ li a {
 .price span.sale_price {
     font-weight: bold;
 }
+.cart_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
